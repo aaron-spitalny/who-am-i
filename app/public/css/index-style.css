@@ -1,0 +1,37 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    background-image: url("/img/brick-wall.png");
+}
+
+.nav-wrapper {
+    height: 48px;
+    width: 100%
+}
+
+.nav-wrapper .nav.fixed {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.react-swipeable-view-container > div[aria-hidden="false"] {
+    height: 100%;
+}
+
+.react-swipeable-view-container > div[aria-hidden="true"] {
+    height: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 121, 107);
+}
