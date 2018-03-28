@@ -16,7 +16,7 @@ export class AboutCard extends React.Component {
             <MuiThemeProvider>
             <Paper style={{paddingTop:50, paddingBottom:50, marginBottom:25}} zDepth={1} rounded={false}>
             <div className="container" style={{padding: 25}}>
-            <div className="row justify-content-center">
+            <div className="row text-center">
             <div className="col-md-5">
             <img  style={imageStyle} src={this.props.about.about_image} width="300" height="300" /> 
             </div>
