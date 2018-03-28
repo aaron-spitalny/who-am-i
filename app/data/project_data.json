@@ -1,0 +1,12 @@
+{
+    "projects":[
+        {
+            "header":"TIC-TAC-TOE",
+            "app_link": "https://damp-eyrie-68044.herokuapp.com",
+            "source_link": "https://github.com/aaron-spitalny/tic-tac-toe",
+            "project_image": "img/tic-tac-toe.png",
+            "idea_features": ["Fun tic-tac-toe game", "JWT sessions/authentication", "View game history", "Email verification"],
+            "technologies_libraries": ["MERN web stack", "Mongoose", "Nodemailer", "Material-UI"]
+        }
+    ]
+}
