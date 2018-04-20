@@ -7,9 +7,14 @@ import {MessageCard} from "../MessageCard"
 
 export class Contact extends React.Component {
     render() {
-        return (<div>
-            <ContactCard />
-            <MessageCard />
+        return (
+            <div className="container">
+            <div className="row justify-content-center">
+            <div className="col-md-9"><ContactCard /></div>
+            </div>
+            <div className="row justify-content-center">
+            <div className="col-md-9"><MessageCard /></div>
+            </div>
             </div>);
     }
 }

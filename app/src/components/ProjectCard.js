@@ -7,7 +7,7 @@ import Subheader from 'material-ui/Subheader';
 const style = {
   height: 300,
   width: 900,
-  margin: 'auto',
+  margin: 'auto'
 };
 
 export class ProjectCard extends React.Component {

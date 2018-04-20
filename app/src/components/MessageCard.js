@@ -20,7 +20,7 @@ export class MessageCard extends React.Component {
         };
         this.send = this.send.bind(this);
         }
-        
+
     send(e){
         var name;
         var email;
@@ -35,13 +35,13 @@ export class MessageCard extends React.Component {
                 message = object.value;
             }
         });
-        
+
         $(".message-form textarea").filter(function(key, object) {
             if(object.name == 'message'){
                 message = object.value;
             }
         });
-        console.log(name + "*" + email + "*" + message);
+        $('.message-form')[0].reset();
         $.post({
             url: "/message",
             type: "POST",
@@ -58,34 +58,33 @@ export class MessageCard extends React.Component {
             });
     }
     render() {
-        return (<div style={{paddingBottom:"50px"}} className="row col-md-offset-4">
+        return (
             <MuiThemeProvider>
-            <Paper style={messageCardStyle} zDepth={1} rounded={false}>
+            <Paper style={{paddingLeft:20, paddingTop:10, paddingBottom:20, marginBottom:25}} zDepth={1} rounded={false}>
             <div className="row">
-            <div className="col-md-12" style={{paddingLeft:"40px", paddingTop:"20px"}}>
+            <div className="col-md-12">
             <Subheader style={{fontSize:"20"}}> Send A Message  </Subheader>
             </div>
             </div>
-            <div className="message-form">
-            <div className="row" style={{height:"103px"}}>
-            <div className="col-md-6" style={{paddingLeft:"60px"}}>
-            <TextField errorText={(this.state.error == 'name')?this.state.errorMessage:""} name="name" hintText="Name" floatingLabelText="Name"/>
+            <form className="message-form">
+            <div className="row" style={{paddingLeft:20}}>
+            <div className="col-md-6">
+            <TextField  id="name" errorText={(this.state.error == 'name')?this.state.errorMessage:""} name="name" hintText="Name" floatingLabelText="Name"/>
             </div>
-            <div className="col-md-6" style={{paddingLeft:"60px", minHeight:"103"}}>
-            <TextField errorText={(this.state.error == 'email')?this.state.errorMessage:""} name="email" hintText="Email" floatingLabelText="Email"/>
+            <div className="col-md-6">
+            <TextField id="email" errorText={(this.state.error == 'email')?this.state.errorMessage:""} name="email" hintText="Email" floatingLabelText="Email"/>
             </div>
             </div>
-            <div className="row">
-            <div className="col-md-8" style={{paddingLeft:"60px"}}>
-            <TextField errorText={(this.state.error == 'message')?this.state.errorMessage:""} name="message" style={{width:"400px"}} floatingLabelText="Message" multiLine={true} rows={4} rowsMax={4} />
+            <div className="row" style={{paddingLeft:20}}>
+            <div className="col-md-7">
+            <TextField id="message" errorText={(this.state.error == 'message')?this.state.errorMessage:""} name="message" style={{width: "80%"}} floatingLabelText="Message" multiLine={true} rows={4} rowsMax={4} />
             </div>
-            <div className="col-md-4" style={{paddingLeft:"100px", paddingTop:"100px"}} >
+            <div className="col-md-2 offset-md-2" style={{paddingTop:"12%", paddingLeft: 0}}>
             <FlatButton onClick={this.send} label="SEND" primary={true} type="button"/>
             </div>
             </div>
-            </div>
+            </form>
             </Paper>
-            </MuiThemeProvider>
-            </div>);
+            </MuiThemeProvider>);
     }
 }
