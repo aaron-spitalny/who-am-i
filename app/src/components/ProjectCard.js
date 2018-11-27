@@ -41,6 +41,7 @@ export class ProjectCard extends React.Component {
             </div>
             </div>
             </Paper>
-            </MuiThemeProvider>);
+            </MuiThemeProvider>
+        );
     }
 }

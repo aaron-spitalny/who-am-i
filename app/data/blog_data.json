@@ -1,0 +1,8 @@
+{
+    "blogs": [{
+        "title": "How to run Perl scripts in Atom",
+        "subtitle": "In three short steps.",
+        "image-link": "https://res.cloudinary.com/practicaldev/image/fetch/s--pVlt7xqx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/ktq5ekvq1o6r4f7lm7o8.png",
+        "blog_link": "https://dev.to/aaronspitalny/how-to-run-perl-scripts-in-atom-oj1"
+    }]
+}

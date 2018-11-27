@@ -21,6 +21,14 @@ export class ContactCard extends React.Component {
             </div>
             <div className="row" style={{paddingBottom:20}}>
             <div className="col-md-2" style={{paddingLeft:15}}>
+            <Subheader style={{fontSize:18}}> DEVPOST: </Subheader>
+            </div>
+            <div className="col-md-4">
+             <a href="https://devpost.com/aspitalny" target="_blank"><Subheader>aaron-spitalny</Subheader></a>
+             </div>
+            </div>
+            <div className="row" style={{paddingBottom:20}}>
+            <div className="col-md-2" style={{paddingLeft:15}}>
             <Subheader style={{fontSize:18}}> DEV: </Subheader>
             </div>
             <div className="col-md-4">

@@ -1,4 +1,5 @@
 {
-    "about_image": "img/aaron.jpg",
-    "about_text": "Hi! I'm Aaron. I love solving problems, learning and building new things, I tend to always keep an open mind."
+	"about_image": "img/aaron.jpg",
+	"about_text":
+		"Hi! I'm Aaron. I love solving problems, learning and building new things, I tend to always keep an open mind. \n\nMy current focus is computer vision where I have worked on a couple of great projects from a life saving pillbox to a driver distraction tracker. \n\nI also have experience with full stack web development and cloud computing. This past summer I built a production ready multi-channel ecommerce platform, our current customer has seen a 25% increase in sales in just one month after deployment and 100% increase in six month."
 }

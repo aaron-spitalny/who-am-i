@@ -7,7 +7,8 @@ const imageStyle = {
 }
 
 const aboutTextStyle = {
-    color: "#00796B"
+    color: "#00796B",
+    whiteSpace: "pre-wrap"
 }
 
 export class AboutCard extends React.Component {
@@ -18,7 +19,7 @@ export class AboutCard extends React.Component {
             <div className="container" style={{padding: 25}}>
             <div className="row">
             <div className="col-md-5 text-center">
-            <img  style={imageStyle} src={this.props.about.about_image} width="300" height="300" /> 
+            <img  style={imageStyle} src={this.props.about.about_image} width="300" height="300" />
             </div>
             <div className="col-md-7 justify-content-start" style={{paddingTop:20}}>
             <div style={aboutTextStyle}>{this.props.about.about_text}</div>
