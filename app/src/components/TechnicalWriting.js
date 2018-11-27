@@ -42,7 +42,7 @@ export class TechnicalWriting extends React.Component {
 							</div>
 							<div className="col-md-7">
 								<a
-									href="https://docs.google.com/document/d/1fYzXqm34iGiypM8lq4dextkqOUXz9RXpTR81xBkavV8/edit?usp=sharing"
+									href="https://docs.google.com/document/d/1qyuFJMiEI5D0BeyulwGmTDJL-LQbHopThFBAJdHr5RQ/edit?usp=sharing"
 									target="_blank">
 									<Subheader>Document</Subheader>
 								</a>
