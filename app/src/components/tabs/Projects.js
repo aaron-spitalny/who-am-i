@@ -20,11 +20,6 @@ export class Projects extends React.Component {
 					<div className="col-md-10">
 						<ProjectCard project={data.projects[0]} />
 					</div>
-					<div className="row justify-content-center">
-						<div className="col-md-10">
-							<TechnicalWriting project={data.projects[1]} />
-						</div>
-					</div>
 				</div>
 			</div>
 		);
